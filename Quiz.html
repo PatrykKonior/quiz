@@ -89,11 +89,16 @@
 
 
     // TODO 2: Declare & assign a variable called fact
-    // Its value should be an object with a statement, true/false answer, and explanation 
+    // Its value should be an object with a statement, true/false answer, and explanation
+    const fact = {
+        "statement": "'1' + '1' === '2'",
+        "answer": "false",
+        "explanation": "The plus operator concatenates (joins together) strings, so '1' + '1' === '11'."
+    }
     
 
-    
     // TODO 3: Set the text of the statement element to the fact's statement
+    statement.textContent = fact.statement;
 
         
 
