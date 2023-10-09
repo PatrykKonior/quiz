@@ -91,9 +91,9 @@
     // TODO 2: Declare & assign a variable called fact
     // Its value should be an object with a statement, true/false answer, and explanation
     const fact = {
-        "statement": "'1' + '1' === '2'",
-        "answer": "false",
-        "explanation": "The plus operator concatenates (joins together) strings, so '1' + '1' === '11'."
+        statement: "'1' + '1' === '2'",
+        answer: false,
+        explanation: "The plus operator concatenates (joins together) strings, so '1' + '1' === '11'."
     }
     
 
@@ -114,6 +114,9 @@
 
     // TODO 5: Declare an isCorrect function that compares a guess to the right answer
     // isCorrect(guess) should return true if the guess matches the fact's answer
+    function isCorrect(guess) {
+        return guess === fact.answer;
+    }
     
 
 
